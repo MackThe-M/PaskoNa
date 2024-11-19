@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Selection</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Inline CSS for background image */
+        body {
+            background-image: url('img/pasko.png'); /* Replace 'img/pasko.png' with the actual image file path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1><b>Choose a Shape</b></h1>
+    <p><b>IF THE COLOR IS GRAY, THEN SOMEBODY OWNS IT!</b></p>
+    <div id="selection">
+        <p><b>Choose your shape, and submit!</b></p>
+        <div class="shapes-container">
+            <!-- Dynamically generated shapes -->
+            <div id="shape1" class="shape circle" onclick="chooseShape(1)"></div>
+            <div id="shape2" class="shape square" onclick="chooseShape(2)"></div>
+            <div id="shape3" class="shape rectangle" onclick="chooseShape(3)"></div>
+            <div id="shape4" class="shape triangle" onclick="chooseShape(4)"></div>
+            <div id="shape5" class="shape circle" onclick="chooseShape(5)"></div>
+            <div id="shape6" class="shape square" onclick="chooseShape(6)"></div>
+            <div id="shape7" class="shape rectangle" onclick="chooseShape(7)"></div>
+            <div id="shape8" class="shape triangle" onclick="chooseShape(8)"></div>
+            <div id="shape9" class="shape circle" onclick="chooseShape(9)"></div>
+            <div id="shape10" class="shape square" onclick="chooseShape(10)"></div>
+            <div id="shape11" class="shape rectangle" onclick="chooseShape(11)"></div>
+            <div id="shape12" class="shape triangle" onclick="chooseShape(12)"></div>
+            <div id="shape13" class="shape circle" onclick="chooseShape(13)"></div>
+            <div id="shape14" class="shape square" onclick="chooseShape(14)"></div>
+            <div id="shape15" class="shape rectangle" onclick="chooseShape(15)"></div>
+            <div id="shape16" class="shape triangle" onclick="chooseShape(16)"></div>
+        </div>
+        <button id="submitBtn" onclick="submitSelection()" disabled>Submit</button>
+        
+        <!-- This button is for resetting the shape selection (for host only) -->
+        <button id="resetBtn" style="display:none;" onclick="resetApp()">Reset</button>
+       
+
+
+        <p id="name"></p>
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>

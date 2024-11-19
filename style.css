@@ -1,0 +1,139 @@
+#submitBtn {
+    background-color: black;
+    color: white; /* Text color for contrast */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+
+#submitBtn:hover {
+    background-color: #333; /* Darker shade of black on hover */
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-image: url('img/pasko.png'); /* Replace with your actual image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white; /* Ensures text is readable over the background */
+}
+
+h1 {
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Shape Styles */
+.shapes-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* 4 shapes per row */
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center; /* Center the grid horizontally */
+}
+
+/* General Shape Styles */
+.shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+    position: relative; /* Required for labels */
+}
+
+/* Circle Shape */
+.circle {
+    width: 120px;
+    height: 120px;
+    background-color: #0D1E4C;
+    border-radius: 50%;
+}
+
+/* Square Shape */
+.square {
+    width: 120px;
+    height: 120px;
+    background-color: #C48CB3;
+}
+
+/* Rectangle Shape */
+.rectangle {
+    width: 120px;
+    height: 120px;
+    background-color: #26415E;
+    border-radius: 5px;
+}
+
+/* Triangle Shape */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #A34054;
+    transform: rotate(180deg);
+}
+
+/* Hover Effect */
+.shape:hover {
+    opacity: 0.8;
+}
+
+/* Selected Shape Styles */
+.selected {
+    background-color: #00cc00;
+    color: white;
+}
+
+/* Chosen Shape Styles */
+.chosen {
+    background-color: #cccccc;
+    color: white;
+    cursor: not-allowed;
+    font-weight: bold;
+    font-size: 16px; /* Slightly larger for better visibility */
+}
+
+/* Other styles */
+/* Make the name font color black */
+
+#name {
+    color: dark black; /* Set font color to black */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Style for encircling the selected name */
+.encircled {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 3px solid #0D1E4C; /* Border color */
+    border-radius: 50%; /* Makes the border circular */
+    background-color: #fff; /* White background */
+    color: #0D1E4C; /* Text color */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Font weight */
+    margin-top: 10px; /* Space from the shapes */
+}
